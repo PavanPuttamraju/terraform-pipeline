@@ -5,10 +5,6 @@ bucket_storage_class = "standard"
 bucket_force_destroy = {
   "first" = true
 }
-
 bucket_versioning = {
   "first" = true
 }
-
-
-
