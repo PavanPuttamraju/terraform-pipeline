@@ -4,7 +4,7 @@ description = "Project ID where GCP bucket will be provisioned"
 
 variable "bucket_name" {
 description = "GCS Bucket name. Value should be unique ."
-type        = string
+type        = list(string)
 }
 
 variable "bucket_location" {
