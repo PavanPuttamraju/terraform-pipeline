@@ -15,16 +15,5 @@ module "gcs_buckets" {
     action = {
       type = "Delete"
     }
-  }]
-  
+  }] 
 }
-
-
-
-
-
-
-
-
-
-
