@@ -11,7 +11,7 @@ pipeline {
         }
          stage ("SA activation") {
             steps {
-                sh 'gcloud auth activate-service-account --key-file firstproject-345205-6f6244f9f478.json'
+                sh 'gcloud auth activate-service-account --key-file SA_key.json'
             }
         }
         stage ("terraform init") {
