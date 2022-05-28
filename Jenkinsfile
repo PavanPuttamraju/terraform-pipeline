@@ -9,11 +9,6 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/PavanPuttamraju/terraform'
             }
         }
-         stage ("SA activation") {
-            steps {
-                sh 'gcloud auth activate-service-account --key-file SA_key.json'
-            }
-        }
         stage ("terraform init") {
             steps {
                 sh 'terraform init'
