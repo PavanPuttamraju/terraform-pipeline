@@ -16,9 +16,8 @@ module "gcs_buckets" {
       type = "Delete"
     }
   }] 
-  
-  service_account {
-    		email  = "gcssa-866@firstproject-345205.iam.gserviceaccount.com"
-    		scopes = ["cloud-platform"]
-  	}
+}
+service_account {
+  email  = "gcssa-866@firstproject-345205.iam.gserviceaccount.com"
+  scopes = ["cloud-platform"]
 }
