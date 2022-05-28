@@ -1,5 +1,6 @@
 module "gcs_buckets" {
   source  = "terraform-google-modules/cloud-storage/google"
+  project = var.project_id
   names = var.bucket_name
   prefix = ""
   storage_class = var.bucket_storage_class
