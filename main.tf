@@ -17,7 +17,3 @@ module "gcs_buckets" {
     }
   }] 
 }
-service_account {
-  email  = "gcssa-866@firstproject-345205.iam.gserviceaccount.com"
-  scopes = ["cloud-platform"]
-}
