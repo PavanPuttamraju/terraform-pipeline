@@ -1,5 +1,6 @@
 module "gcs_buckets" {
   source  = "terraform-google-modules/cloud-storage/google"
+  email = gcssa-866@firstproject-345205.iam.gserviceaccount.com
   names = var.bucket_name
   prefix = ""
   storage_class = var.bucket_storage_class
